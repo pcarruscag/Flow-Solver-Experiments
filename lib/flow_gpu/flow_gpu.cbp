@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="flow_gpu" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Release_GPU">
+				<Option output="../../bin/Release/flow_gpu" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="../../obj/Release/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-fomit-frame-pointer" />
+					<Add option="-fexpensive-optimizations" />
+					<Add option="-O3" />
+					<Add option="-funroll-loops" />
+					<Add option="-ffast-math" />
+					<Add option="-march=native" />
+					<Add option="-DEIGEN_NO_DEBUG" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-std=c++11" />
+			<Add option="-m64" />
+			<Add option="-fexceptions" />
+			<Add option="-ftemplate-backtrace-limit=0" />
+			<Add option="-fopenmp" />
+			<Add option="-Wno-int-in-bool-context" />
+			<Add option="-DFLOW_VERBOSE_EXTRA" />
+			<Add option="-DEIGEN_DONT_PARALLELIZE" />
+			<Add option="-DEIGEN_FAST_MATH=1" />
+			<Add directory="../../ext/Eigen" />
+			<Add directory="/usr/local/cuda/include" />
+		</Compiler>
+		<Linker>
+			<Add option="-m64" />
+			<Add option="-fopenmp" />
+		</Linker>
+		<Unit filename="src/flow_gpu.cl" />
+		<Unit filename="src/flow_gpu.cpp" />
+		<Unit filename="src/flow_gpu.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

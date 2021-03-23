@@ -1,0 +1,19 @@
+### Inlet Conditions ###
+1	1
+50.0
+2
+4.167	50000
+### Outlet Conditions ###
+0.0	    0
+### Domain Conditions ###
+97.0
+1	1
+### Fluid Properties ###
+1.2	1.0e-5
+### Fluid Models ###
+SST
+### Convergence Parameters ###
+1e-3  50    500
+50    0.3   0.05
+150   0.4   0.5
+

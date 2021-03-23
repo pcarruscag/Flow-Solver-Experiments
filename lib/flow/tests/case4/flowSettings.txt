@@ -1,0 +1,19 @@
+### Inlet Conditions ###
+1	1
+5.0
+2
+0.0	1.0
+### Outlet Conditions ###
+0.0	    0
+### Domain Conditions ###
+9.7
+1	1
+### Fluid Properties ###
+1.2	1.0e-3
+### Fluid Models ###
+Laminar
+### Convergence Parameters ###
+1e-4  50    1
+30    0.4   1.0
+100    0.7   1.0
+

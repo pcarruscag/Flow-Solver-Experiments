@@ -1,0 +1,11 @@
+### Objectives ###
+2
+MDOT_OUT
+ETA_TT
+### Convergence Parameters ###
+10 0.01
+0.3  1.5
+### Advanced Parameters ###
+
+300 0.03 1e-5 1.0
+0

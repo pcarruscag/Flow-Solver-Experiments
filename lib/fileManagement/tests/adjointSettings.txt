@@ -1,0 +1,11 @@
+### Objectives ###
+2
+DELTAP_TT
+ETA_TT
+### Convergence Parameters ###
+25    0.01
+0.05  1.50
+### Advanced Parameters ###
+test/mydir
+300  0.01  1e-5  1.0
+0

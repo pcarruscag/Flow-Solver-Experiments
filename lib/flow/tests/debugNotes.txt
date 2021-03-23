@@ -1,0 +1,52 @@
+# BUG 1
+Sympton:
+    Solver is crashing because it is failing to match periodic faces
+
+Possible causes:
+1)  The difference in radial/axial coordinate suggests that the problem is not
+    due to numerical accuracy
+    The face groups are not being populated correctly
+2)  The matching is based on centroid coordinates, these are not being computed
+    correctly
+
+Cause investigation:
+1)  Each periodic face has 96 faces (8 meri * 12 span), 24 per partition
+    Every partition has 30 inlets, 30 outlets and 48 periodic faces
+    Inner partitions have 60 walls and 360 ghost faces
+    End partitions have 240 walls and 180 ghost faces
+    The correct number of boundaries is being created
+    The z coordinates of the periodic faces are not inside the blade region
+
+Cause:
+    The wrong face was being marked as "mapped", code was trying to map a face
+    that was already mapped before
+
+
+# BUG 2
+Sympton:
+    Segfault while allocating the sparse matrices
+
+Cause:
+    The index of the face was being used instead of the index of the partition
+    in the boundary vector
+
+
+# BUG 3
+Sympton:
+    Assertion for expected number of coefficients == obtained number is failing
+    while allocating the sparse matrices
+
+Possible causes:
+1)  Eigen is prunning the 0 coefficient.
+
+Cause investigation:
+1)  Set the first coefficient to a non zero value. This was not the problem.
+
+Cause:
+    Variable coeffNum is the index of the last coefficient which is 1 smaller
+    than the number of coefficients in the matrix, coeffNum incremented at the
+    end so it represents number of coefficients
+
+
+
+

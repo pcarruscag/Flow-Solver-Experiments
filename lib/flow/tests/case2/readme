@@ -1,0 +1,5 @@
+Description:
+4 structs of elliptical shape, ave y+ approx 4.0, air with SST turbulence
+same as case 1 but coarser mesh (98k cells)
+wall cell size needs to increse more than average cell size for convergence
+

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="Workspace">
+		<Project filename="exe/unitTester/unitTester.cbp">
+			<Depends filename="lib/adjoint/adjoint.cbp" />
+			<Depends filename="lib/flow/flow.cbp" />
+			<Depends filename="lib/mesh/mesh.cbp" />
+			<Depends filename="lib/mathUtils/mathUtils.cbp" />
+			<Depends filename="lib/geometry/geometryGeneration.cbp" />
+			<Depends filename="lib/fileManagement/fileManagement.cbp" />
+		</Project>
+		<Project filename="lib/adjoint/adjoint.cbp" />
+		<Project filename="lib/flow/flow.cbp">
+			<Depends filename="lib/mesh/mesh.cbp" />
+			<Depends filename="lib/mathUtils/mathUtils.cbp" />
+			<Depends filename="lib/fileManagement/fileManagement.cbp" />
+		</Project>
+		<Project filename="lib/flow_gpu/flow_gpu.cbp">
+			<Depends filename="lib/mesh/mesh.cbp" />
+			<Depends filename="lib/mathUtils/mathUtils.cbp" />
+			<Depends filename="lib/fileManagement/fileManagement.cbp" />
+		</Project>
+		<Project filename="lib/mesh/mesh.cbp">
+			<Depends filename="lib/mathUtils/mathUtils.cbp" />
+			<Depends filename="lib/geometry/geometryGeneration.cbp" />
+			<Depends filename="lib/fileManagement/fileManagement.cbp" />
+		</Project>
+		<Project filename="lib/geometry/geometryGeneration.cbp">
+			<Depends filename="lib/mathUtils/mathUtils.cbp" />
+			<Depends filename="lib/fileManagement/fileManagement.cbp" />
+		</Project>
+		<Project filename="lib/mathUtils/mathUtils.cbp" />
+		<Project filename="lib/fileManagement/fileManagement.cbp" />
+		<Project filename="exe/console/console.cbp">
+			<Depends filename="lib/adjoint/adjoint.cbp" />
+			<Depends filename="lib/flow/flow.cbp" />
+			<Depends filename="lib/mesh/mesh.cbp" />
+			<Depends filename="lib/geometry/geometryGeneration.cbp" />
+			<Depends filename="lib/mathUtils/mathUtils.cbp" />
+			<Depends filename="lib/fileManagement/fileManagement.cbp" />
+		</Project>
+		<Project filename="exe/console2/console2.cbp">
+			<Depends filename="lib/flow/flow.cbp" />
+			<Depends filename="lib/flow_gpu/flow_gpu.cbp" />
+			<Depends filename="lib/mesh/mesh.cbp" />
+			<Depends filename="lib/geometry/geometryGeneration.cbp" />
+			<Depends filename="lib/mathUtils/mathUtils.cbp" />
+			<Depends filename="lib/fileManagement/fileManagement.cbp" />
+		</Project>
+		<Project filename="exe/meshGenerator/meshGenerator.cbp" />
+		<Project filename="exe/interpolator/interpolator.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>

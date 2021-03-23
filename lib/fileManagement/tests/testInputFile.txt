@@ -1,0 +1,41 @@
+### Number of Blades ###
+9
+### Hub Control Points ###
+6
+0.0	10.0
+10.0	10.0
+20.0	10.0
+30.0	10.0
+40.0	10.0
+50.0	10.0
+### Shroud Control Points ###
+5
+0.0	25.0
+12.5	25.0
+25.0	25.0
+37.5	25.0
+50.0	25.0
+### Leading and Trailing Edge Control Points ###
+4
+0.21	0.81
+0.22	0.82
+0.23	0.83
+0.24	0.84
+### Wrap Angle Control Points ###
+3
+0.0	1.0	2.0	3.0
+5.0	6.0	7.0	8.0
+10.0	11.0	12.0	13.0
+### Thickness Control Points ###
+2
+0.0	5.0
+1.0	5.0
+0.0	4.0
+1.0	4.0
+0.0	3.0
+1.0	3.0
+0.0	2.0
+1.0	2.0
+### Advanced Parameters ###
+100	10	100
+
