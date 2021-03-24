@@ -16,5 +16,5 @@ The code is setup to compile with [CodeBlocks](https://www.codeblocks.org/).
 See examples and tests.
 
 ## License
-[LGPL-3.0](https://www.gnu.org/licenses/lgpl-3.0.html)
+[GPL-3.0](https://www.gnu.org/licenses/gpl-3.0.html)
 
