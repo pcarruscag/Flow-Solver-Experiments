@@ -1,0 +1,13 @@
+To run the primal solver:
+ln -s flowSettings_scratch.txt flowSettings.txt
+console -flw ./ 4 0
+
+"flow.out" is a reference convergence history.
+
+To run the different adjoints:
+ln -s flowSettings_ini.txt flowSettings.txt
+ln -s left_pss/adjointSettings.txt .
+console -adj ./ 4 0
+
+Reference output and gradients in each folder.
+
